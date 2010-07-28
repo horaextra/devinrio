@@ -1,0 +1,16 @@
+body {
+    font-family: helvetica,arial,sans-serif;
+    line-height: 1.5em;
+}
+
+h1 {
+    letter-spacing: -0.06em;
+}
+
+header address { font-size: 1.2em; }
+header abbr { font-size: 1.5em; }
+header h1 { font-size: 2em; margin: 0; }
+
+nav { float: right; }
+
+#wrap { width: 960px; margin: auto; }
