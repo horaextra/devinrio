@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-* { line-height: 1.4em; 
+* { 
 	margin: 0;
 	padding: 0;
 }
@@ -19,7 +19,7 @@ header { margin: 0 auto; width: 960px; display: block; padding-top: 4em;}
 header address { font-size: 1.2em; }
 header abbr { font-size: 1.5em; }
 header h1 { font-size: 2em; margin: 0 0 0 0.5em;}
-header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; margin-top: -136px; }
+header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; margin-top: -121px; line-height: 1.4em; text-align: right;}
 header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
 
