@@ -23,7 +23,9 @@ header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; margin-t
 header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
 
-a { font-size: .6em; color: #71C7E4; text-decoration: none; }
+p { float:left; margin-top: 50px; margin-left: 100px; }
+
+a { color: #71C7E4; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 nav { float: right; }
