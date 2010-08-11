@@ -11,12 +11,17 @@ body {
 	padding: 0;
 }
 
+h2 { margin: 1em 0 0 0.5em;}
+
 .clear {clear: both; }
 
 #wrap { background: transparent url(../images/scrollwork.png) no-repeat scroll 50% 0;
 		overflow: auto;}
 
 #crumb { width: 960px; margin: 0 auto; padding-top: 2em;}
+
+a { color: #71C7E4; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 
 /*HEADER*/
@@ -27,17 +32,15 @@ header h1 { display: inline; font-size: 2em; margin: 0 0 0 0.5em;}
 header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; line-height: 1.4em; text-align: right;}
 header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
+header #contact_links { margin-top: -1.5em; color: #FFF; font-size: 1em;}
+header #contact_links a { margin-left: 0.5em;}
+header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 
-a { color: #71C7E4; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-nav { float: right; }
 
 /*CONTENT*/
 
-#content { background-color: #33474D; float: left; width: 720px; margin: 2em 0;
-			}
-#content h2 { margin: 1em 0 0 0.5em;}
+#content { background-color: #33474D; float: left; width: 720px; margin: 2em 0;}
+#content h2 { }
 #schedule { width: 704px; list-style: none; padding-bottom: 2em;}
 #schedule li { background-color: #222F33; margin: 2em 1em 0 1em;
 			width: 688px;}
@@ -49,11 +52,10 @@ nav { float: right; }
 #schedule li  .speaker { padding: 0.5em;}
 #schedule li  .speaker a img { float: left; margin: 0.4em 0.5em 0 0;}
 #schedule li  .speaker a span { margin-left: -0.5em;}
-#schedule li  .speaker p { color: #FFF; font-size: 0.8em;}]
-
-
-
+#schedule li  .speaker p { color: #FFF; font-size: 0.8em;}
 
 
 /*SPONSORS*/
 
+#sponsors { float: right; background-color: #33474D; margin: 2em 0;
+			width: 232px;}
