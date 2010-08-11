@@ -42,10 +42,11 @@ header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 #content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0;}
 #content h2 { }
 #schedule { width: 704px; list-style: none; padding-bottom: 1em;}
-#schedule li { background-color: #222F33; margin: 1.5em 1em;
-			width: 688px;}
-#schedule li h3, #schedule li .time { display: table; color: #71C7E4;
-								line-height: 32px;}
+#schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
+#schedule li.alt h3 {color: #444F55;}
+
+#schedule li h3, #schedule li .time, #schedule li p#atencao { display: table; color: #71C7E4;	line-height: 32px;}
+#schedule li p#atencao { padding: 0 10px;}
 #schedule li h3  { background-color: #121B1D; width: 612px;
 				float: left; text-indent: 0.5em; font-weight: normal;}
 #schedule li .time { background-color: #000000; width: 76px; text-align: center;}
@@ -60,4 +61,4 @@ header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 #sponsors { float: right; background-color: #33474D; margin: 1.5em 0;
 			width: 232px; height: 220px;}
 #sponsors p {background-color: #4D6B73; margin: 1.5em 1em; padding: 0.5em;}
-#sponsors p b {font-size: 1.4em; line-height: 1.2em;}
+#sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
