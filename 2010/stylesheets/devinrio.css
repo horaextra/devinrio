@@ -11,7 +11,7 @@ body {
 	padding: 0;
 }
 
-h2 { margin: 1em 0 0 0.5em;}
+h2 { margin: 1em 0 0 0.65em;}
 
 .clear {clear: both; }
 
@@ -32,17 +32,17 @@ header h1 { display: inline; font-size: 2em; margin: 0 0 0 0.5em;}
 header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; line-height: 1.4em; text-align: right;}
 header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
-header #contact_links { margin-top: -1.5em; color: #FFF; font-size: 1em;}
-header #contact_links a { margin-left: 0.5em;}
+header #contact_links { margin-top: -2em; color: #FFF; font-size: 1em;}
+header #contact_links a { margin-left: 0.5em; font-style: italic;}
 header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 
 
 /*CONTENT*/
 
-#content { background-color: #33474D; float: left; width: 720px; margin: 2em 0;}
+#content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0;}
 #content h2 { }
-#schedule { width: 704px; list-style: none; padding-bottom: 2em;}
-#schedule li { background-color: #222F33; margin: 2em 1em 0 1em;
+#schedule { width: 704px; list-style: none; padding-bottom: 1em;}
+#schedule li { background-color: #222F33; margin: 1.5em 1em;
 			width: 688px;}
 #schedule li h3, #schedule li .time { display: table; color: #71C7E4;
 								line-height: 32px;}
@@ -50,12 +50,14 @@ header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 				float: left; text-indent: 0.5em; font-weight: normal;}
 #schedule li .time { background-color: #000000; width: 76px; text-align: center;}
 #schedule li  .speaker { padding: 0.5em;}
-#schedule li  .speaker a img { float: left; margin: 0.4em 0.5em 0 0;}
+#schedule li  .speaker a img { float: left; margin: 0.25em 0.5em 0 0;}
 #schedule li  .speaker a span { margin-left: -0.5em;}
 #schedule li  .speaker p { color: #FFF; font-size: 0.8em;}
 
 
 /*SPONSORS*/
 
-#sponsors { float: right; background-color: #33474D; margin: 2em 0;
-			width: 232px;}
+#sponsors { float: right; background-color: #33474D; margin: 1.5em 0;
+			width: 232px; height: 220px;}
+#sponsors p {background-color: #4D6B73; margin: 1.5em 1em; padding: 0.5em;}
+#sponsors p b {font-size: 1.4em; line-height: 1.2em;}
