@@ -36,16 +36,6 @@ header #contact_links { margin-top: -2em; color: #FFF; font-size: 1em;}
 header #contact_links a { margin-left: 0.5em; font-style: italic;}
 header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 
-<<<<<<< HEAD
-=======
-p { float:left; margin-top: 50px; margin-left: 100px; }
-
-a { color: #71C7E4; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-nav { float: right; }
->>>>>>> heroku/master
-
 /*CONTENT*/
 
 #content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0;}
