@@ -1,7 +1,7 @@
 body {
     background: #486069 url(../images/bg.png) repeat scroll 0 0;
     font-family: Helvetica, Arial, sans-serif;
-	line-height: 1.5em;
+	line-height: 1.4em;
     margin: 0;
     padding: 0;
 }
@@ -13,12 +13,10 @@ body {
 
 .clear {clear: both; }
 
-#wrap { 
-    background: transparent url(../images/scrollwork.png) no-repeat scroll 50% 0;
-}
+#wrap { background: transparent url(../images/scrollwork.png) no-repeat scroll 50% 0;
+		overflow: auto;}
 
-#crumb { border: 1px solid green; width: 960px; margin: 0 auto;
-		padding-top: 3em;}
+#crumb { width: 960px; margin: 0 auto; padding-top: 2em;}
 
 
 /*HEADER*/
@@ -37,15 +35,20 @@ nav { float: right; }
 
 /*CONTENT*/
 
-#content { background-color: #262626; float: left; width: 720px; margin-bottom: 2em;}
+#content { background-color: #33474D; float: left; width: 720px; margin: 2em 0;
+			}
+#content h2 { margin: 1em 0 0 0.5em;}
 #schedule { width: 704px; list-style: none; padding-bottom: 2em;}
-#schedule li { margin: 2em 1em 0 1em;}
-#schedule li h2, #schedule li .time { color: #71C7E4;}
-#schedule li h2  { background-color: #131313; width: 628px; display: table;
-				float: left;}
-#schedule li .time { background-color: #000000; width: 76px;}
-#schedule li  .speaker { margin-top: 0.5em;}
-#schedule li  .speaker a img { float: left;}
+#schedule li { background-color: #222F33; margin: 2em 1em 0 1em;
+			width: 688px;}
+#schedule li h3, #schedule li .time { display: table; color: #71C7E4;
+								line-height: 32px;}
+#schedule li h3  { background-color: #121B1D; width: 612px;
+				float: left; text-indent: 0.5em; font-weight: normal;}
+#schedule li .time { background-color: #000000; width: 76px; text-align: center;}
+#schedule li  .speaker { padding: 0.5em;}
+#schedule li  .speaker a img { float: left; margin: 0.4em 0.5em 0 0;}
+#schedule li  .speaker a span { margin-left: -0.5em;}
 #schedule li  .speaker p { color: #FFF; font-size: 0.8em;}]
 
 
