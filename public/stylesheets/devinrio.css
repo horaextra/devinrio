@@ -64,3 +64,4 @@ header #history {
 			width: 232px;}
 #sponsors p {background-color: #4D6B73; margin: 1.5em 1em; padding: 0.5em;}
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
+#sponsors p a#plan-funding { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
