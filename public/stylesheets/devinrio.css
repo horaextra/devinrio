@@ -35,6 +35,9 @@ header p em { font-style: normal; font-size: 1.3em;}
 header #contact_links { margin-top: -2em; color: #FFF; font-size: 1em;}
 header #contact_links a { margin-left: 0.5em; font-style: italic;}
 header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
+header #history {
+  font-size: 1.2em;
+}
 
 /*CONTENT*/
 
@@ -58,6 +61,6 @@ header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 /*SPONSORS*/
 
 #sponsors { float: right; background-color: #33474D; margin: 1.5em 0;
-			width: 232px; height: 220px;}
+			width: 232px;}
 #sponsors p {background-color: #4D6B73; margin: 1.5em 1em; padding: 0.5em;}
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
