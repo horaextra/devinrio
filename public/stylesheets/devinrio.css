@@ -42,7 +42,7 @@ header #history {
 /*CONTENT*/
 
 #content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0;}
-#content h2 { }
+#content h2, #sponsors h2 { color: #fff; }
 #schedule { width: 704px; list-style: none; padding-bottom: 1em;}
 #schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
 #schedule li.alt h3 {color: #444F55;}
@@ -62,6 +62,9 @@ header #history {
 
 #sponsors { float: right; background-color: #33474D; margin: 1.5em 0;
 			width: 232px;}
-#sponsors p {background-color: #4D6B73; margin: 1.5em 1em; padding: 0.5em;}
+#sponsors h2 { font-size: 1.2em;}
+#sponsors h2#silver-title { color: #E6E8FA; margin: 1em 0 0 .8em;}
+#sponsors p {background-color: #4D6B73; margin: 1em; padding: 0.5em;}
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
 #sponsors p a#plan-funding { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
+#sponsors a img { border: none; }
