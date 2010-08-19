@@ -73,5 +73,4 @@ header #history {
 /*BADGES*/
 
 #badges ul{ list-style: none;}
-#badges ul li img{ margin: 0 0 1em 1em;}
-#badges ul li { padding: 1em 2em;}
+#badges ul li { padding: 1em;}
