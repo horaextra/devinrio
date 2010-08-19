@@ -60,11 +60,18 @@ header #history {
 
 /*SPONSORS*/
 
-#sponsors { float: right; background-color: #33474D; margin: 1.5em 0;
-			width: 232px;}
-#sponsors h2 { font-size: 1.2em;}
+#sponsors { margin: 1.5em 0;}
 #sponsors h2#silver-title { color: #E6E8FA; margin: 1em 0 0 .8em;}
 #sponsors p {background-color: #4D6B73; margin: 1em; padding: 0.5em;}
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
 #sponsors p a#plan-funding { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
 #sponsors a img { border: none; }
+
+#sponsors, #badges { float: right; background-color: #33474D; width: 232px;}
+#sponsors h2, #badges h2 { font-size: 1.2em; color: #FFF;}
+
+/*BADGES*/
+
+#badges ul{ list-style: none;}
+#badges ul li img{ margin: 0 0 1em 1em;}
+#badges ul li { padding: 1em 2em;}
