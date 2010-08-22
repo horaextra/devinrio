@@ -11,7 +11,8 @@ body {
 	padding: 0;
 }
 
-h2 { margin: 1em 0 0 0.65em;}
+h2 { margin: 1em 0 0 0.65em; color: #fff;}
+.sidebar h2 { margin: 1em 0 .4em 0;}
 
 .clear {clear: both; }
 
@@ -42,7 +43,6 @@ header #history {
 /*CONTENT*/
 
 #content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0;}
-#content h2, #sponsors h2 { color: #fff; }
 #schedule { width: 704px; list-style: none; padding-bottom: 1em;}
 #schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
 #schedule li.alt h3 {color: #444F55;}
@@ -60,17 +60,36 @@ header #history {
 
 /*SPONSORS*/
 
-#sponsors { margin: 1.5em 0;}
-#sponsors h2#silver-title { color: #E6E8FA; margin: 1em 0 0 .8em;}
+#sponsors { margin: 1.5em 0 1em 0;}
+#sponsors h2#silver-title { color: #E6E8FA;}
 #sponsors p {background-color: #4D6B73; margin: 1em; padding: 0.5em;}
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
-#sponsors p a#plan-funding { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
+#sponsors p a#sponsorship-plan { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
 #sponsors a img { border: none; }
 
-#sponsors, #badges { float: right; background-color: #33474D; width: 232px;}
-#sponsors h2, #badges h2 { font-size: 1.2em; color: #FFF;}
+.sidebar { float: right; background-color: #33474D; width: 232px;}
+.sidebar h2 { font-size: 1.2em; color: #FFF; text-align: center;}
+
+/*COMMUNITIES*/
+
+#communities { margin: 1em 0; padding: 0 0 1em 0;}
+#communities ul {
+  margin: 0 1em;
+  list-style-type: none;
+  background-color: #4D6B73; 
+}
+
+#communities ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+#communities img {
+  border: none;
+}
 
 /*BADGES*/
 
+#badges { margin: 1em 0;}
 #badges ul{ list-style: none;}
-#badges ul li { padding: 1em 0.8em;}
+#badges ul li { padding: 1em 0.8em; text-align: center;}
