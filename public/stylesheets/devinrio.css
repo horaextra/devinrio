@@ -26,7 +26,7 @@ a:hover { text-decoration: underline; }
 
 
 /*HEADER*/
-header { padding-top: 4em;}
+header { padding-top: 2em;}
 header address { font-size: 1.2em; }
 header abbr { font-size: 1.5em; }
 header h1 { float: left; font-size: 2em; margin: 0 0 0 0.5em;}
@@ -61,9 +61,10 @@ header #history {
 /*SPONSORS*/
 
 #sponsors { margin: 1.5em 0 1em 0;}
+#sponsors h2#bronze-title { color: #8C7853;}
 #sponsors h2#silver-title { color: #E6E8FA;}
 #sponsors h2#golden-title { color: #FFD700;}
-#sponsors p { margin: 1em; padding: 0.5em;}
+#sponsors p { margin: 1em; padding: 0.5em; text-align: center; }
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
 #sponsors p a#sponsorship-plan { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
 #sponsors a img { border: none; }
