@@ -62,6 +62,7 @@ header #history {
 
 #sponsors { margin: 1.5em 0 1em 0;}
 #sponsors h2#silver-title { color: #E6E8FA;}
+#sponsors h2#golden-title { color: #FFD700;}
 #sponsors p {background-color: #4D6B73; margin: 1em; padding: 0.5em;}
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
 #sponsors p a#sponsorship-plan { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
