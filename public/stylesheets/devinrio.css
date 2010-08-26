@@ -29,11 +29,11 @@ a:hover { text-decoration: underline; }
 header { padding-top: 4em;}
 header address { font-size: 1.2em; }
 header abbr { font-size: 1.5em; }
-header h1 { display: inline; font-size: 2em; margin: 0 0 0 0.5em;}
+header h1 { float: left; font-size: 2em; margin: 0 0 0 0.5em;}
 header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; line-height: 1.4em; text-align: right;}
 header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
-header #contact_links { margin-top: -2em; color: #FFF; font-size: 1em;}
+header #contact_links { color: #FFF; font-size: 1em;}
 header #contact_links a { margin-left: 0.5em; font-style: italic;}
 header #contact_links  img { border: none; margin: 0.2em 0.2em 0 0;}
 header #history {
