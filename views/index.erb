@@ -17,20 +17,7 @@
   <body>
 	<div id="wrap">
 		<div id="crumb">
-			<header>
-				<h1><img src="images/logo.png" alt="Logo Dev In Rio 2010" title="Dev In Rio 2010"></h1>
-				<p>
-				  "Um evento que reunir&aacute; as <em>comunidades de tecnologia</em>
-					mais movimentadas do <em>Rio de Janeiro</em>"
-					<img src="images/date-and-local.png" alt="Hotel Guanabara - Centro - 9 de outubro" />
-				</p>
-				<p id="menu">
-					<a href="#map"><img src="images/map.png"/>Como chegar</a> 
-					<a href="http://twitter.com/devinrio"><img src="images/twitter.png"/>@devinrio</a> 
-					<a href="mailto:contato@devinrio.com.br"><img src="images/email.png"/>contato@devinrio.com.br</a>
-				</p>
-				<p id="history"><a href="/2009"><strong>Veja como foi o evento de 2009</strong></a></p>
-			</header>
+			<%= erb(:header, :layout => false) %>
 			<div id="content">
 				<h2> Programa&ccedil;&atilde;o </h2>
 				<ol id="schedule">
@@ -55,7 +42,7 @@
 						<div class="speaker">
 							<a class="url speaker" href="http://akitaonrails.com/">
 								<span>Fábio Akita</span>
-								<img width="75" src="images/palestrantes/akita.png" alt="fulano" class="photo">
+								<img width="75" src="images/palestrantes/akita.png" alt="Fábio Akita" class="photo">
 							</a>
 							<p>Um dos mais ativos evangelistas de Ruby on Rails da América Latina. Organizou e promoveu a primeira real conferência de Ruby on Rails no Brasil: RejectConf São Paulo ‘07, e mais recentemente organizou o <a target="_blank" href="http://www.railssummit.com.br/">Rails Summit Latin America em 2009.</a> Bloga regularmente em português e inglês no <a target="_blank" href="http://akitaonrails.com/">AkitaOnRails.com</a> sobre desenvolvimento de software, Ruby on Rails, entre outras coisas. Ele também ajuda a evangelizar novas tecnologias e a Filosofia Ágil.
 							</p>
@@ -71,7 +58,7 @@
 						<div class="speaker">
 							<a class="url speaker" href="http://henriquebastos.net/">
 								<span>Henrique Bastos</span>
-								<img width="75" src="images/palestrantes/henrique.png" alt="fulano" class="photo">
+								<img width="75" src="images/palestrantes/henrique.png" alt="Henrique Bastos" class="photo">
 							</a>
 							<p>Henrique é apaixonado por desenvolvimento de software! Trabalha como diretor de tecnologia na Myfreecomm, criando sistemas com Métodos Ágeis, Python e Software Livres. Está constantemente presente nas comunidades de software organizando eventos e encontros, ministrando palestras, cursos e evangelizando o desenvolvimento sustentável de software, no Brasil e no exterior. Dentre muitas iniciativas, foi um dos organizadores do Dev in Rio 2009 e das caravanas PythonCampus que visitam universidades promovendo a integração entre alunos e o mercado de tecnologia através de software livre. .
 							</p>
@@ -95,7 +82,7 @@
 						<div class="speaker">
 							<a class="url speaker" href="http://bielsystems.com.br/">
 								<span>Rafael Lima</span>
-								<img width="75" src="images/palestrantes/rafael.jpg" alt="fulano" class="photo">
+								<img width="75" src="images/palestrantes/rafael.jpg" alt="Rafael Lima" class="photo">
 							</a>
 							<p>Sócio Fundador da <a target="_blank" href="http://bielsystems.com.br">BielSystems</a> e da <a target="_blank" href="http://empreendaweb.com.br">Empreenda Web</a> e Diretor da <a target="_blank" href="http://myfreecomm.com.br">Myfreecomm,</a> trabalha com desenvolvimento de software há mais de 10 anos. Programa, mas hoje atua basicamente na gestão e no nível estratégico dos projetos que participa. Escolheu Ruby on Rails para todos os aplicativos desenvolvidos pela BielSystems.
 							</p>
@@ -123,23 +110,22 @@
 						<div class="speaker">
 							<a class="url speaker" href="http://beonthe.net/criar_site_fazer_site/pagina/home">
 								<span>Vinícius Teles</span>
-								<img width="75" src="images/palestrantes/vinicius.png" alt="fulano" class="photo">
+								<img width="75" src="images/palestrantes/vinicius.png" alt="Vinícius Teles" class="photo">
 							</a>
 							<p>Fundador da consultoria <a target="_blank" href="http://www.improveit.com.br/">Improve It.</a> Ele escreveu o primeiro livro brasileiro de XP e trabalhou como coach e mentor de XP por muitos anos. Ele vem desenvolvendo com Rails desde 2006. No fim de 2007 ele mudou sua empresa para um novo modelo de negócios, transformando a Improve It em uma empresa de produtos web. Ele agora se sustenta com assinaturas dos clientes de seu principal produto, o <a target="_blank" href="http://beonthe.net/">Be on the Net.</a>
 							</p>
 						</div>
 					</li>
 					<li>
-						<h3>--</h3>
+						<h3>NodeJS - a performance que eu sempre quis ter</h3>
 						<span class="time">17:20</span>
 						<div class="speaker">
-							<a class="url speaker" href="#">
-								<span>Palestrante não confirmado</span>
-								<img width="75" src="images/palestrante.png" class="photo">
+							<a class="url speaker" href="http://codificando.com/">
+								<span>Emerson Macedo</span>
+								<img width="75" src="images/palestrantes/emerson.jpg" alt="Emerson Macedo" class="photo">
 							</a>
-							<p>--</p>
-							<p>&nbsp;</p>
-							<p>&nbsp;</p>
+							<p>É Arquiteto/Desenvolvedor de Software com mais de 12 anos de experiência. Atualmente trabalha na globo.com, sediado no Rio de Janeiro. Possui vasta experiência nos ramos de telecomunicações, seguros, bancos, portais, entre outros.
+Entusiasta de metodologias ágeis, também é professor de cusos de extensão em faculdades. Escreve regularmente em seu blog de tecnologia <a target="_blank" href="http://codificando.com">codificando.com</a> e no blog <a target="_blank" href="http://visaoagil.wordpress.com/author/emerleite/">visão ágil</a>.</p>
 						</div>
 					</li>
 					<li>
