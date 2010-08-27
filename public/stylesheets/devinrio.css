@@ -35,6 +35,7 @@ header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; line-hei
 header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
 header #menu { color: #FFF; font-size: 1em;}
+header #menu #signup { background: #222F33; padding: 10px; }
 header #menu a { margin-left: 1em; font-style: italic; line-height: 1.6em;}
 header #menu  img { border: none; margin: 0; vertical-align: middle;}
 header #history {
