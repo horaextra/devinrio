@@ -74,20 +74,20 @@ header #history {
 .sidebar { float: right; background-color: #33474D; width: 232px;}
 .sidebar h2 { font-size: 1.2em; color: #FFF; text-align: center;}
 
-/*COMMUNITIES*/
+/*COMMUNITIES / SUPPORT */
 
-#communities { margin: 1em 0; padding: 0 0 1em 0;}
-#communities ul {
+#communities, #support { margin: 1em 0; padding: 0 0 1em 0;}
+#communities ul, #support ul {
   margin: 0 1em;
   list-style-type: none;
 }
 
-#communities ul li {
+#communities ul li, #support ul li {
   padding: 10px;
   text-align: center;
 }
 
-#communities img {
+#communities img, #support img {
   border: none;
 }
 
