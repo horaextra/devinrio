@@ -6,9 +6,17 @@
 					<img src="images/date-and-local.png" alt="Hotel Guanabara - Centro - 9 de outubro" />
 				</p>
 				<p id="menu">
-					<a href="/#map"><img src="images/map.png"/> Como chegar</a> 
-					<a href="http://twitter.com/devinrio"><img src="images/twitter.png"/> @devinrio</a> 
+					<a href="/#map"><img src="images/map.png"/> Como chegar</a>
+					<a href="http://twitter.com/devinrio"><img src="images/twitter.png"/> @devinrio</a>
 					<a href="mailto:contato@devinrio.com.br"><img src="images/email.png"/> contato@devinrio.com.br</a>
 				</p>
 				<p id="history"><a href="/2009"><strong>Veja como foi o evento de 2009</strong></a></p>
+				<p id="history">
+				  <% tweet ="@DevinRio EU VOU!! Inscreva-se também http://www.devinrio.com.br/inscreva-se #devinrio"%>
+          <a href="http://twitter.com/?status=<%= CGI.escape(tweet) %>" style ="float: left; border: 0;">
+            <img src="/images/eu_vou_twitter.png" alt="tuitar" style ="border: 0;"/>
+            <strong>EU VOU!</strong>
+          </a>
+        </p>
 			</header>
+
