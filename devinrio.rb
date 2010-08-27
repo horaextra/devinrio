@@ -12,3 +12,6 @@ get '/2009' do
   erb :site_2009
 end
 
+get '/inscreva-se' do
+  erb :inscricao
+end

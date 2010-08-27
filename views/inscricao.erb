@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dev In Rio 2010 - Hotel Guanabara - 9 de outubro</title>
+    
+    <meta name="description" content="DevInRio 2010 - Um evento para reunir todas classes de aventureiros em uma só questão"  />
+    
+    <!--[if lte IE 8]>
+    <script src="javascripts/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <link href="stylesheets/devinrio.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+	<div id="wrap">
+		<div id="crumb">
+			<header>
+				<h1><img src="images/logo.png" alt="Logo Dev In Rio 2010" title="Dev In Rio 2010"></h1>
+				<p>
+				  "Um evento que reunir&aacute; as <em>comunidades de tecnologia</em>
+					mais movimentadas do <em>Rio de Janeiro</em>"
+					<img src="images/date-and-local.png" alt="Hotel Guanabara - Centro - 9 de outubro" />
+				</p>
+				<p id="menu">
+					<a href="#map"><img src="images/map.png"/>Como chegar</a> 
+					<a href="http://twitter.com/devinrio"><img src="images/twitter.png"/>@devinrio</a> 
+					<a href="mailto:contato@devinrio.com.br"><img src="images/email.png"/>contato@devinrio.com.br</a>
+				</p>
+				<p id="history"><a href="/2009"><strong>Veja como foi o evento de 2009</strong></a></p>
+			</header>
+			<div id="content">
+        <iframe src ="http://app.eventoshq.com.br/964d9fdf5936be15ac108c21e7f3431e4a847e7f/subscriptions/new" class="form_iframe" style="border: 0; width: 500px; height:1020px;" scrolling="no"><p>O seu browser não permite iframes.</p></iframe>
+			</div>
+			<%= erb(:sidebar, :layout => false) %>
+		</div>
+	</div>
+    
+    <!-- User Voice feedback -->
+    <script type="text/javascript">
+      var uservoiceJsHost = ("https:" == document.location.protocol) ? "https://uservoice.com" : "http://cdn.uservoice.com";
+      document.write(unescape("%3Cscript src='" + uservoiceJsHost + "/javascripts/widgets/tab.js' type='text/javascript'%3E%3C/script%3E"))
+    </script>
+    <script type="text/javascript">
+      UserVoice.Tab.show({ 
+        /* required */
+        key: 'devinrio',
+        host: 'devinrio.uservoice.com', 
+        forum: '28183', 
+        /* optional */
+        alignment: 'left',
+        background_color:'#f60', 
+        text_color: 'white',
+        hover_color: '#f60',
+        lang: 'pt_BR'
+      })
+    </script>
+    <!-- / User Voice feedback -->
+    
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-10307500-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    <!-- / Google Analytics -->
+    
+  </body>
+</html>
