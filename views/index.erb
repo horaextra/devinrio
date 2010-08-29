@@ -7,6 +7,9 @@
     
     <meta name="description" content="DevInRio 2010 - Um evento para reunir todas classes de aventureiros em uma só questão"  />
     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/global.js" type="text/javascript"></script>
+    
     <!--[if lte IE 8]>
     <script src="javascripts/html5.js" type="text/javascript"></script>
     <![endif]-->
@@ -20,7 +23,7 @@
 			<%= erb(:header, :layout => false) %>
 			<div id="content">
 				<h2> Programa&ccedil;&atilde;o </h2>
-				<ol id="schedule">
+				<ol class="schedule">
 				  <li>
 						<h3>Credenciamento e socialização</h3>
 						<span class="time">08:30</span>
@@ -36,113 +39,190 @@
 							<p>Membro atuante da comunidade <a href="http://horaextra.org">#horaextra</a> do Rio de Janeiro. Mantém o blog pessoal <a href="http://mergulhao.info">mergulhao.info</a>. CTO do site de classificados <a href="http://redeparede.com.br">Redeparede</a>. Fundou em 2010 a <a href="http://helabs.com.br">Helabs Consulting</a> para entrar no mercado de consultoria e metodologias Ágeis.</p>
 						</div>
 					</li>
-					<li>
-						<h3>As últimas novidades no mundo Ruby</h3>
-						<span class="time">09:30</span>
-						<div class="speaker">
-							<a class="url speaker" href="http://akitaonrails.com/">
-								<span>Fábio Akita</span>
-								<img width="75" src="images/palestrantes/akita.png" alt="Fábio Akita" class="photo">
-							</a>
-							<p>Um dos mais ativos evangelistas de Ruby on Rails da América Latina. Organizou e promoveu a primeira real conferência de Ruby on Rails no Brasil: RejectConf São Paulo ‘07, e mais recentemente organizou o <a target="_blank" href="http://www.railssummit.com.br/">Rails Summit Latin America em 2009.</a> Bloga regularmente em português e inglês no <a target="_blank" href="http://akitaonrails.com/">AkitaOnRails.com</a> sobre desenvolvimento de software, Ruby on Rails, entre outras coisas. Ele também ajuda a evangelizar novas tecnologias e a Filosofia Ágil.
-							</p>
-						</div>
-					</li>
-					<li>
-						<h3>Apresentação surpresa</h3>
-						<span class="time">10:20</span>
-					</li>
-					<li>
-						<h3>Empreendendo uma comunidade de sucesso</h3>
-						<span class="time">10:50</span>
-						<div class="speaker">
-							<a class="url speaker" href="http://henriquebastos.net/">
-								<span>Henrique Bastos</span>
-								<img width="75" src="images/palestrantes/henrique.png" alt="Henrique Bastos" class="photo">
-							</a>
-							<p>Henrique é apaixonado por desenvolvimento de software! Trabalha como diretor de tecnologia na Myfreecomm, criando sistemas com Métodos Ágeis, Python e Software Livres. Está constantemente presente nas comunidades de software organizando eventos e encontros, ministrando palestras, cursos e evangelizando o desenvolvimento sustentável de software, no Brasil e no exterior. Dentre muitas iniciativas, foi um dos organizadores do Dev in Rio 2009 e das caravanas PythonCampus que visitam universidades promovendo a integração entre alunos e o mercado de tecnologia através de software livre. .
-							</p>
-						</div>
-					</li>
-					<li>
-						<h3>Coding Dojo + Open Space</h3>
-						<span class="time">11:40</span>
-					</li>
-					<li>
-						<h3>Intervalo para almo&ccedil;o</h3>
-						<span class="time">12:10</span>
-					</li>
-					<li>
-						<h3>Coding Dojo + Open Space</h3>
-						<span class="time">13:30</span>
-					</li>
-					<li>
-						<h3>Transformando idéias em negócios rentáveis</h3>
-						<span class="time">14:20</span>
-						<div class="speaker">
-							<a class="url speaker" href="http://bielsystems.com.br/">
-								<span>Rafael Lima</span>
-								<img width="75" src="images/palestrantes/rafael.jpg" alt="Rafael Lima" class="photo">
-							</a>
-							<p>Sócio Fundador da <a target="_blank" href="http://bielsystems.com.br">BielSystems</a> e da <a target="_blank" href="http://empreendaweb.com.br">Empreenda Web</a> e Diretor da <a target="_blank" href="http://myfreecomm.com.br">Myfreecomm,</a> trabalha com desenvolvimento de software há mais de 10 anos. Programa, mas hoje atua basicamente na gestão e no nível estratégico dos projetos que participa. Escolheu Ruby on Rails para todos os aplicativos desenvolvidos pela BielSystems.
-							</p>
-						</div>
-					</li>
-					<li>
-						<h3>Apresentação surpresa</h3>
-						<span class="time">15:10</span>
-					</li>
-					<li>
-						<h3>Arduino: construindo robôs com software e hardware livres</h3>
-						<span class="time">15:40</span>
-						<div class="speaker">
-							<a class="url speaker" href="http://blog.justen.eng.br/">
-								<span>Álvaro Justen</span>
-								<img width="75" src="images/palestrantes/alvaro.jpg" alt="Álvaro Justen" class="photo">
-							</a>
-							<p>Também conhecido como <b>Turicas</b>, é graduando em <a href="http://www.telecom.uff.br/">Engenharia de Telecomunicações</a> pela <a href="http://www.uff.br/">Universidade Federal Fluminense</a>. Usuário de GNU/Linux há mais de 8 anos, ativista do software livre, programador <a href="http://www.python.org/">Python</a> e desenvolvedor do <a href="http://www.web2py.com/">web2py</a>. Em sua vida acadêmica já desenvolveu atividades de pesquisa, ensino e extensão, tendo participado do <a href="http://www.telecom.uff.br/pet">Programa de Educação Tutorial (PET-Tele)</a> e do <a href="http://complex.if.uff.br/">grupo de pesquisa em física estatística e computacional do IF-UFF</a>.
-							</p>
-						</div>
-					</li>
-					<li>
-						<h3>Fuja da Escravidão, antes que ela te alcance </h3>
-						<span class="time">16:30</span>
-						<div class="speaker">
-							<a class="url speaker" href="http://beonthe.net/criar_site_fazer_site/pagina/home">
-								<span>Vinícius Teles</span>
-								<img width="75" src="images/palestrantes/vinicius.png" alt="Vinícius Teles" class="photo">
-							</a>
-							<p>Fundador da consultoria <a target="_blank" href="http://www.improveit.com.br/">Improve It.</a> Ele escreveu o primeiro livro brasileiro de XP e trabalhou como coach e mentor de XP por muitos anos. Ele vem desenvolvendo com Rails desde 2006. No fim de 2007 ele mudou sua empresa para um novo modelo de negócios, transformando a Improve It em uma empresa de produtos web. Ele agora se sustenta com assinaturas dos clientes de seu principal produto, o <a target="_blank" href="http://beonthe.net/">Be on the Net.</a>
-							</p>
-						</div>
-					</li>
-					<li>
-						<h3>NodeJS - a performance que eu sempre quis ter</h3>
-						<span class="time">17:20</span>
-						<div class="speaker">
-							<a class="url speaker" href="http://codificando.com/">
-								<span>Emerson Macedo</span>
-								<img width="75" src="images/palestrantes/emerson.jpg" alt="Emerson Macedo" class="photo">
-							</a>
-							<p>É Arquiteto/Desenvolvedor de Software com mais de 12 anos de experiência. Atualmente trabalha na globo.com, sediado no Rio de Janeiro. Possui vasta experiência nos ramos de telecomunicações, seguros, bancos, portais, entre outros.
-Entusiasta de metodologias ágeis, também é professor de cursos de extensão em faculdades. Escreve regularmente em seu blog de tecnologia <a target="_blank" href="http://codificando.com">codificando.com</a> e no blog <a target="_blank" href="http://visaoagil.wordpress.com/author/emerleite/">visão ágil</a>.</p>
-						</div>
-					</li>
-					<li>
-						<h3>Apresentação surpresa</h3>
-						<span class="time">18:10</span>
-					</li>
-					<li>
-						<h3>Encerramento</h3>
-						<span class="time">18:40</span>
-					</li>
-					<li>
-						<h3>#horaextra</h3>
-						<span class="time">19:00</span>
-					</li>
-					<li>
-						<p id="atencao">OBS: Programação sujeita à alteração sem aviso prévio.</p>
-					</li>
+			  </ol>
+			  <ul id="tabs">
+			    <li><a href="#" id="nav_sala_1" class="active">Sala 1</a></li>
+			    <li><a href="#" id="nav_sala_2">Sala 2</a></li>
+			  </ul>
+			  <div id="sala_1" class="tab-content">
+			    <ol class="schedule">
+					  <li>
+						  <h3>As últimas novidades no mundo Ruby</h3>
+						  <span class="time">09:30</span>
+						  <div class="speaker">
+							  <a class="url speaker" href="http://akitaonrails.com/">
+								  <span>Fábio Akita</span>
+								  <img width="75" src="images/palestrantes/akita.png" alt="Fábio Akita" class="photo">
+							  </a>
+							  <p>Um dos mais ativos evangelistas de Ruby on Rails da América Latina. Organizou e promoveu a primeira real conferência de Ruby on Rails no Brasil: RejectConf São Paulo ‘07, e mais recentemente organizou o <a target="_blank" href="http://www.railssummit.com.br/">Rails Summit Latin America em 2009.</a> Bloga regularmente em português e inglês no <a target="_blank" href="http://akitaonrails.com/">AkitaOnRails.com</a> sobre desenvolvimento de software, Ruby on Rails, entre outras coisas. Ele também ajuda a evangelizar novas tecnologias e a Filosofia Ágil.
+							  </p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Apresentação surpresa</h3>
+						  <span class="time">10:20</span>
+					  </li>
+					  <li>
+						  <h3>Empreendendo uma comunidade de sucesso</h3>
+						  <span class="time">10:50</span>
+						  <div class="speaker">
+							  <a class="url speaker" href="http://henriquebastos.net/">
+								  <span>Henrique Bastos</span>
+								  <img width="75" src="images/palestrantes/henrique.png" alt="Henrique Bastos" class="photo">
+							  </a>
+							  <p>Henrique é apaixonado por desenvolvimento de software! Trabalha como diretor de tecnologia na Myfreecomm, criando sistemas com Métodos Ágeis, Python e Software Livres. Está constantemente presente nas comunidades de software organizando eventos e encontros, ministrando palestras, cursos e evangelizando o desenvolvimento sustentável de software, no Brasil e no exterior. Dentre muitas iniciativas, foi um dos organizadores do Dev in Rio 2009 e das caravanas PythonCampus que visitam universidades promovendo a integração entre alunos e o mercado de tecnologia através de software livre. .
+							  </p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Coding Dojo + Open Space</h3>
+						  <span class="time">11:40</span>
+					  </li>
+					  <li>
+						  <h3>Intervalo para almo&ccedil;o</h3>
+						  <span class="time">12:10</span>
+					  </li>
+					  <li>
+						  <h3>Coding Dojo + Open Space</h3>
+						  <span class="time">13:30</span>
+					  </li>
+					  <li>
+						  <h3>Transformando idéias em negócios rentáveis</h3>
+						  <span class="time">14:20</span>
+						  <div class="speaker">
+							  <a class="url speaker" href="http://bielsystems.com.br/">
+								  <span>Rafael Lima</span>
+								  <img width="75" src="images/palestrantes/rafael.jpg" alt="Rafael Lima" class="photo">
+							  </a>
+							  <p>Sócio Fundador da <a target="_blank" href="http://bielsystems.com.br">BielSystems</a> e da <a target="_blank" href="http://empreendaweb.com.br">Empreenda Web</a> e Diretor da <a target="_blank" href="http://myfreecomm.com.br">Myfreecomm,</a> trabalha com desenvolvimento de software há mais de 10 anos. Programa, mas hoje atua basicamente na gestão e no nível estratégico dos projetos que participa. Escolheu Ruby on Rails para todos os aplicativos desenvolvidos pela BielSystems.
+							  </p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Apresentação surpresa</h3>
+						  <span class="time">15:10</span>
+					  </li>
+					  <li>
+						  <h3>Arduino: construindo robôs com software e hardware livres</h3>
+						  <span class="time">15:40</span>
+						  <div class="speaker">
+							  <a class="url speaker" href="http://blog.justen.eng.br/">
+								  <span>Álvaro Justen</span>
+								  <img width="75" src="images/palestrantes/alvaro.jpg" alt="Álvaro Justen" class="photo">
+							  </a>
+							  <p>Também conhecido como <b>Turicas</b>, é graduando em <a href="http://www.telecom.uff.br/">Engenharia de Telecomunicações</a> pela <a href="http://www.uff.br/">Universidade Federal Fluminense</a>. Usuário de GNU/Linux há mais de 8 anos, ativista do software livre, programador <a href="http://www.python.org/">Python</a> e desenvolvedor do <a href="http://www.web2py.com/">web2py</a>. Em sua vida acadêmica já desenvolveu atividades de pesquisa, ensino e extensão, tendo participado do <a href="http://www.telecom.uff.br/pet">Programa de Educação Tutorial (PET-Tele)</a> e do <a href="http://complex.if.uff.br/">grupo de pesquisa em física estatística e computacional do IF-UFF</a>.
+							  </p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>NodeJS - a performance que eu sempre quis ter</h3>
+						  <span class="time">16:30</span>
+						  <div class="speaker">
+							  <a class="url speaker" href="http://codificando.com/">
+								  <span>Emerson Macedo</span>
+								  <img width="75" src="images/palestrantes/emerson.jpg" alt="Emerson Macedo" class="photo">
+							  </a>
+							  <p>É Arquiteto/Desenvolvedor de Software com mais de 12 anos de experiência. Atualmente trabalha na globo.com, sediado no Rio de Janeiro. Possui vasta experiência nos ramos de telecomunicações, seguros, bancos, portais, entre outros.
+  Entusiasta de metodologias ágeis, também é professor de cursos de extensão em faculdades. Escreve regularmente em seu blog de tecnologia <a target="_blank" href="http://codificando.com">codificando.com</a> e no blog <a target="_blank" href="http://visaoagil.wordpress.com/author/emerleite/">visão ágil</a>.</p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Fuja da Escravidão, antes que ela te alcance </h3>
+						  <span class="time">17:20</span>
+						  <div class="speaker">
+							  <a class="url speaker" href="http://beonthe.net/criar_site_fazer_site/pagina/home">
+								  <span>Vinícius Teles</span>
+								  <img width="75" src="images/palestrantes/vinicius.png" alt="Vinícius Teles" class="photo">
+							  </a>
+							  <p>Fundador da consultoria <a target="_blank" href="http://www.improveit.com.br/">Improve It.</a> Ele escreveu o primeiro livro brasileiro de XP e trabalhou como coach e mentor de XP por muitos anos. Ele vem desenvolvendo com Rails desde 2006. No fim de 2007 ele mudou sua empresa para um novo modelo de negócios, transformando a Improve It em uma empresa de produtos web. Ele agora se sustenta com assinaturas dos clientes de seu principal produto, o <a target="_blank" href="http://beonthe.net/">Be on the Net.</a>
+							  </p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Apresentação surpresa</h3>
+						  <span class="time">18:10</span>
+					  </li>
+					</ol>
+				</div>
+				<div id="sala_2" class="tab-content">
+				  <ol class="schedule">
+					  <li>
+						  <h3>HTML 5 e as novas JS APIs</h3>
+						  <span class="time">09:30</span>
+						  <div class="speaker">
+							  <p class="preamble">Palestra sobre as novas tendencias do desenvolvimento de cliente web. Nela serão abordados diversos conceitos do HTML5 e JS API</p>
+							  
+							  <a class="url speaker" href="http://yayquery.com.br/">
+								  <span>Leonardo Balter</span>
+								  <img width="75" src="images/palestrantes/leonardo.jpg" alt="Leonardo Balter" class="photo">
+							  </a>
+							  <p>Evangelista de tecnologias client side e web standards. Atualmente trabalha como desenvolvedor web na Hi Midia e professor de jQuery no iLearn, membro do W3C. Dissemina uma campanha para o uso de webstandards que ofereça maior interoperabilidade entre diferentes navegadores e plataformas, assim como atender tecnologias de dispositivos móveis.</p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Apresentação surpresa</h3>
+						  <span class="time">10:20</span>
+					  </li>
+					  <li>
+						  <h3>Symfony - OO PHP para gente grande</h3>
+						  <span class="time">10:50</span>
+						  <div class="speaker">
+							  <p class="preamble">Symfony é um novo framework php realmente orientado a objeto, com MVC e outras coisas mais. A idéia a palestra é apresentá-loe mostrar o quanto ele pode ajudar o desenvolvedor a criar seus produtos de forma rápida, sustentável e elegante.</p>
+							  
+							  <a class="url speaker" href="http://lsouza.pro.br">
+								  <span>Luã de Souza</span>
+								  <img width="75" src="images/palestrantes/lua.jpg" alt="Luã de Souza" class="photo">
+							  </a>
+							  <p>Entusiasta do framework ágil Symfony, do Wordpress e fã de carteirinha do jQuery. Sempre em busca de projetos que exercitem a criatividade e que contribuam de alguma forma pra web.</p>
+							  <p>&nbsp;</p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Coding Dojo + Open Space</h3>
+						  <span class="time">11:40</span>
+					  </li>
+					  <li>
+						  <h3>Intervalo para almo&ccedil;o</h3>
+						  <span class="time">12:10</span>
+					  </li>
+					  <li>
+						  <h3>Coding Dojo + Open Space</h3>
+						  <span class="time">13:30</span>
+					  </li>
+					  <li>
+						  <h3>Testes unitários em JavaScript: usar ou não usar mock?</h3>
+						  <span class="time">14:20</span>
+						  <div class="speaker">
+							  <p class="preamble">Nesta palestra, será abordado:<br />
+                  - como seu código javascript pode ser escrito para ser "testável";<br />
+                  - o que é "mock" em termos de teste unitário e como executar em código client;<br />
+                  - algumas ferramentas de teste e de mock mais usadas e<br />
+                  - filosofia de testes em outras linguagens, como Python, trazidas para o código client.</p>
+							  <a class="url speaker" href="#">
+								  <span>Márcio Santana</span>
+								  <img width="75" src="images/palestrantes/marcio-santana.jpg" alt="Márcio Santana" class="photo">
+							  </a>
+							  <p>É desenvolvedor desde 2001 já tendo passado por PERL, ASP, .NET, JavaScript e Python. Disseminadordo uso de JavaScript como linguagem funcional. Atualmente é desenvolvedor sênior na Globo.com onde procura empregar a mesma experiência de desenvolvimento server side em código client.</p>
+						  </div>
+					  </li>
+					  <li>
+						  <h3>Apresentação surpresa</h3>
+						  <span class="time">15:10</span>
+					  </li>
+					</ol>
+				</div>
+				<ol class="schedule">
+				 <li>
+				  <h3>Encerramento</h3>
+				  <span class="time">18:40</span>
+				 </li>
+				 <li>
+				  <h3>#horaextra</h3>
+				  <span class="time">19:00</span>
+				 </li>
+				 <li>
+				  <p id="atencao">OBS: Programação sujeita à alteração sem aviso prévio.</p>
+				 </li>
 				</ol>
 				
 				<div id="map">

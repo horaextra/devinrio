@@ -45,20 +45,49 @@ header #history {
 /*CONTENT*/
 
 #content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0;}
-#schedule { width: 704px; list-style: none;}
-#schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
-#schedule li.alt h3 {color: #444F55;}
+.schedule { width: 704px; list-style: none;}
+.schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
+.schedule li.alt h3 {color: #444F55;}
 
-#schedule li h3, #schedule li .time, #schedule li p#atencao { display: table; color: #71C7E4;	line-height: 32px;}
-#schedule li p#atencao { padding: 0 10px;}
-#schedule li h3  { background-color: #121B1D; width: 612px;
+.schedule li h3, .schedule li .time, .schedule li p#atencao { display: table; color: #71C7E4;	line-height: 32px;}
+.schedule li p#atencao { padding: 0 10px;}
+.schedule li h3  { background-color: #121B1D; width: 612px;
 				float: left; text-indent: 0.5em; font-weight: normal;}
-#schedule li .time { background-color: #000000; width: 76px; text-align: center;}
-#schedule li  .speaker { padding: 0.5em;}
-#schedule li  .speaker a img { float: left; margin: 0.25em 0.5em 0 0;}
-#schedule li  .speaker a span { margin-left: -0.5em;}
-#schedule li  .speaker p { color: #FFF; font-size: 0.8em;}
+.schedule li .time { background-color: #000000; width: 76px; text-align: center;}
+.schedule li  .speaker { padding: 0.5em;}
+.schedule li  .speaker .preamble { margin-bottom: 10px;}
+.schedule li  .speaker a img { float: left; margin: 0.25em 0.5em 0 0;}
+.schedule li  .speaker a span { margin-left: -0.5em;}
+.schedule li  .speaker p { color: #FFF; font-size: 0.8em;}
 
+ul#tabs {
+  background-color: #121B1D;
+  list-style-type: none;
+  padding:  0 0 0 20px;
+  height: 40px;
+}
+
+ul#tabs li {
+  float: left;
+  margin: 0 2px 0 0;
+}
+
+ul#tabs li a {
+  display: block;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 2.2em;
+  font-weight: bold;
+}
+
+ul#tabs li a:hover { background-color: #222F33; }
+ul#tabs li a.active { background-color: #222F33; }
+
+#sala_1, #sala_2 { border-bottom: 5px solid #121B1D; }
+#sala_2 { display: none; }
 
 /*SPONSORS*/
 
