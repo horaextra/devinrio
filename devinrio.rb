@@ -19,3 +19,7 @@ end
 get '/inscreva-se' do
   erb :inscricao
 end
+
+get '/boleto' do
+  erb :boleto
+end

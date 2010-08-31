@@ -36,7 +36,7 @@ header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
 header #menu { color: #FFF; font-size: 1em; width: 700px; }
 header #menu #signup { background: #222F33; padding: 2px 6px; font-weight: bold; font-size: 1.2em;}
-header #menu a { margin-left: 1em; font-style: italic; line-height: 1.6em;}
+header #menu a { margin-left: 1.4em; line-height: 2em;}
 header #menu  img { border: none; margin: 0; vertical-align: middle;}
 header #history {
   font-size: 1.2em;
@@ -44,7 +44,7 @@ header #history {
 
 /*CONTENT*/
 
-#content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0;}
+#content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0; min-height: 2500px;}
 .schedule { width: 704px; list-style: none;}
 .schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
 .schedule li.alt h3 {color: #444F55;}
@@ -135,4 +135,47 @@ ul#tabs li a.active { background-color: #222F33; }
 
 #map iframe {
   margin: 20px 0 10px 20px;
+}
+
+/* FORMS */
+
+form {
+	margin: 20px 10px;
+  padding: 20px;
+  width: 500px;
+  background-color: #222F33;
+  color: #fff;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+label {
+  display: block;
+}
+
+form input {
+  font-size: 1.1em;
+  padding: 2px;
+  display: block;
+  width: 380px;
+}
+
+.button {
+  width: 200px;
+  text-align: center;
+  margin: 4px 10px 10px 0;
+  padding: 4px;
+  font-size: 1.1em;
+  background-color: #33474D;
+  color: #fff;
+  border: none;
+}
+
+#info {
+  margin: 10px 16px;
+  color: #fff;
 }
