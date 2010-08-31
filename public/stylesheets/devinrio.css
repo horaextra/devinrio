@@ -29,7 +29,7 @@ a:hover { text-decoration: underline; }
 header { padding-top: 2em;}
 header address { font-size: 1.2em; }
 header abbr { font-size: 1.5em; }
-header h1 { float: left; font-size: 2em; margin: 0 0 0 0.5em;}
+header h1 { float: left; font-size: 2em; margin: .6em 0 0 0;}
 header h1 img { border: none; }
 header p {  width: 600px; color: #0C1213; font-size: 2em; float: right; line-height: 1.4em; text-align: right;}
 header p img { margin-top: 0.5em;}
