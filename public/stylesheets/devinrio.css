@@ -89,6 +89,17 @@ ul#tabs li a.active { background-color: #222F33; }
 #sala_1, #sala_2 { border-bottom: 5px solid #121B1D; }
 #sala_2 { display: none; }
 
+#text {
+	margin: 20px 10px;
+  padding: 2px 10px;
+  background-color: #222F33;
+  color: #fff;
+}
+
+#text p {
+  margin: 1.4em 0;
+}
+
 /*SPONSORS*/
 
 #sponsors { margin: 1.5em 0 1em 0;}

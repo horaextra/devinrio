@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dev In Rio 2010 - Hotel Guanabara - 9 de outubro</title>
+    
+    <meta name="description" content="DevInRio 2010 - Um evento para reunir todas classes de aventureiros em uma só questão"  />
+    
+    <!--[if lte IE 8]>
+    <script src="javascripts/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    <link href="stylesheets/devinrio.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+	<div id="wrap">
+		<div id="crumb">
+			<%= erb(:header, :layout => false) %>
+			<div id="content">
+      	<h2>Imprensa</h2>
+
+        <div id="text">
+	        <p>Em 2009 o Devinrio sacudiu o mundo do desenvolvimento de software do Rio de Janeiro apresentando excelentes palestras durante um dia inteiro. Mais de 450 pessoas de todos os cantos do país compareceram ao evento.</p>
+	        <p>Após muito se discutir se deveria haver ou não uma continuidade, o grupo do <a href="http://horaextra.org">#horaextra</a> decidiu assumir a responsabilidade. Esse ano o evento está estruturado com duas trilhas paralelas intercaladas com sessões de open spaces e palestras surpresas, que apenas serão reveladas no dia do evento.</p>
+	        <p>As inscrições já estão abertas e a organização espera que sejam esgotadas em breve. São apenas 500 vagas e mais da metade já está preenchida faltando ainda um mês para o evento. Queremos as comunidades de desenvolvimento carioca presentes em peso!</p>
+	        <p>Os temas das palestras são diretamente ligados a desenvolvimento de software, em geral palestras técnicas com objetivo de mostrar aos participantes as últimas tendências no desenvolvimento de software. Além dessa linha técnica, outras palestras mostram mais o lado empreendedor que um desenvolvedor de software pode ter.</p>
+	        <p>Enfim, a programação é imperdível. Mantenha-se atualizado, <a href="/inscreva-se">inscreva-se já</a> e siga <a href="http://twitter.com/devinrio">@devinrio</a> no twitter!</p>
+	      </div>
+			</div>
+			<%= erb(:sidebar, :layout => false) %>
+		</div>
+	</div>
+    
+    <!-- User Voice feedback -->
+    <script type="text/javascript">
+      var uservoiceJsHost = ("https:" == document.location.protocol) ? "https://uservoice.com" : "http://cdn.uservoice.com";
+      document.write(unescape("%3Cscript src='" + uservoiceJsHost + "/javascripts/widgets/tab.js' type='text/javascript'%3E%3C/script%3E"))
+    </script>
+    <script type="text/javascript">
+      UserVoice.Tab.show({ 
+        /* required */
+        key: 'devinrio',
+        host: 'devinrio.uservoice.com', 
+        forum: '28183', 
+        /* optional */
+        alignment: 'left',
+        background_color:'#f60', 
+        text_color: 'white',
+        hover_color: '#f60',
+        lang: 'pt_BR'
+      })
+    </script>
+    <!-- / User Voice feedback -->
+    
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-10307500-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    <!-- / Google Analytics -->
+    
+  </body>
+</html>

@@ -23,3 +23,11 @@ end
 get '/boleto' do
   erb :boleto
 end
+
+get '/imprensa' do
+  erb :imprensa
+end
+
+get '/press' do
+  erb :imprensa_en
+end
