@@ -7,14 +7,25 @@
 
     <meta name="description" content="DevInRio 2010 - Um evento para reunir todas classes de aventureiros em uma só questão"  />
 
+    <link href="stylesheets/devinrio.css" media="screen" rel="stylesheet" type="text/css" />
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
     <script src="javascripts/global.js" type="text/javascript"></script>
+
+    <% if locals[:sala] == 2 %>
+      <script>
+        $(function() {
+          $(".tab-content").fadeOut();
+          $("#sala_2").fadeIn();
+          $("ul#tabs li a").removeClass("active");
+          $("ul#tabs li a#nav_sala_2").addClass("active");
+        });
+      </script>
+    <% end %>
 
     <!--[if lte IE 8]>
     <script src="javascripts/html5.js" type="text/javascript"></script>
     <![endif]-->
-
-    <link href="stylesheets/devinrio.css" media="screen" rel="stylesheet" type="text/css" />
   </head>
 
   <body>

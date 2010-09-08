@@ -8,8 +8,16 @@ get '/' do
   erb :index
 end
 
+get '/sala2' do
+  erb :index, :locals => { :sala => 2 }
+end
+
 get '/en' do
   erb :index_en
+end
+
+get '/track-b' do
+  erb :index_en, :locals => { :sala => 2 }
 end
 
 get '/2009' do
