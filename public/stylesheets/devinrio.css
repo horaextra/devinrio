@@ -108,7 +108,9 @@ ul#tabs li a.active { background-color: #222F33; }
 #sponsors h2#golden-title { color: #FFD700;}
 #sponsors p { margin: 1em; padding: 0.5em; text-align: center; }
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
-#sponsors p a#sponsorship-plan { padding: 6px 0 6px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
+#sponsors p#sponsorship-plan,#sponsors p#toast {margin: .5em 0;}
+#sponsors p#sponsorship-plan a { padding: 8px 0 4px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
+#sponsors p#toast a { padding: 8px 0 4px 35px; background: transparent url(../images/basket.png) no-repeat 0 0;}
 #sponsors a img { border: none; }
 
 .sidebar { float: right; background-color: #33474D; width: 232px;}
