@@ -115,6 +115,7 @@ ul#tabs li a.active { background-color: #222F33; }
 
 .sidebar { float: right; background-color: #33474D; width: 232px;}
 .sidebar h2 { font-size: 1.2em; color: #FFF; text-align: center;}
+.sidebar #auditoria { text-align: center; margin: 0 0 1em 0;}
 
 /*COMMUNITIES / SUPPORT */
 
