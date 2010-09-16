@@ -117,20 +117,20 @@ ul#tabs li a.active { background-color: #222F33; }
 .sidebar h2 { font-size: 1.2em; color: #FFF; text-align: center;}
 .sidebar #auditoria { text-align: center; margin: 0 0 1em 0;}
 
-/*COMMUNITIES / SUPPORT */
+/*COMMUNITIES / SUPPORT / DISCLOSURE */
 
-#communities, #support { margin: 1em 0; padding: 0 0 1em 0;}
-#communities ul, #support ul {
+#communities, #support, #disclosure { margin: 1em 0; padding: 0 0 1em 0;}
+#communities ul, #support ul, #disclosure ul {
   margin: 0 1em;
   list-style-type: none;
 }
 
-#communities ul li, #support ul li {
+#communities ul li, #support ul li, #disclosure ul li {
   padding: 10px;
   text-align: center;
 }
 
-#communities img, #support img {
+#communities img, #support img, #disclosure img {
   border: none;
 }
 
