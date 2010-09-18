@@ -44,7 +44,7 @@ header #history {
 
 /*CONTENT*/
 
-#content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0; min-height: 3000px;}
+#content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0; min-height: 3300px;}
 .schedule { width: 704px; list-style: none;}
 .schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
 .schedule li.alt h3 {color: #444F55;}
@@ -119,18 +119,18 @@ ul#tabs li a.active { background-color: #222F33; }
 
 /*COMMUNITIES / SUPPORT / DISCLOSURE */
 
-#communities, #support, #disclosure { margin: 1em 0; padding: 0 0 1em 0;}
-#communities ul, #support ul, #disclosure ul {
+#communities, #achievement, #support, #disclosure { margin: 1em 0; padding: 0 0 1em 0;}
+#communities ul, #achievement ul, #support ul, #disclosure ul {
   margin: 0 1em;
   list-style-type: none;
 }
 
-#communities ul li, #support ul li, #disclosure ul li {
+#communities ul li, #achievement ul li, #support ul li, #disclosure ul li {
   padding: 10px;
   text-align: center;
 }
 
-#communities img, #support img, #disclosure img {
+#communities img, #achievement img, #support img, #disclosure img {
   border: none;
 }
 
