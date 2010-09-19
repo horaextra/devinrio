@@ -98,6 +98,23 @@ ul#tabs li a.active { background-color: #222F33; }
 
 #text p {
   margin: 1.4em 0;
+  clear: left;
+}
+
+#text ul {
+  list-style-type: none;
+}
+
+#text ul li {
+  float: left;
+  width: 335px;
+  height: 42px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#text ul li img {
+  border: none;
 }
 
 /*SPONSORS*/
@@ -108,9 +125,9 @@ ul#tabs li a.active { background-color: #222F33; }
 #sponsors h2#golden-title { color: #FFD700;}
 #sponsors p { margin: 1em; padding: 0.5em; text-align: center; }
 #sponsors p strong {font-size: 1.6em; line-height: 1.2em; font-weight: bold; text-transform: uppercase; letter-spacing: -1px; color: #fff;}
-#sponsors p#sponsorship-plan,#sponsors p#toast {margin: .5em 0;}
+#sponsors p#sponsorship-plan,#sponsors p#gift {margin: .5em 0;}
 #sponsors p#sponsorship-plan a { padding: 8px 0 4px 35px; background: transparent url(../images/pdf.png) no-repeat 0 0;}
-#sponsors p#toast a { padding: 8px 0 4px 35px; background: transparent url(../images/basket.png) no-repeat 0 0;}
+#sponsors p#gift a { padding: 8px 0 4px 35px; background: transparent url(../images/basket.png) no-repeat 0 0;}
 #sponsors a img { border: none; }
 
 .sidebar { float: right; background-color: #33474D; width: 232px;}
@@ -132,6 +149,19 @@ ul#tabs li a.active { background-color: #222F33; }
 
 #communities img, #achievement img, #support img, #disclosure img {
   border: none;
+}
+
+#support p a {
+  display: block;
+  line-height: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+#support p a:hover {
+  background-color: #55696F;
 }
 
 /*BADGES*/

@@ -39,3 +39,7 @@ end
 get '/press' do
   erb :imprensa_en
 end
+
+get '/sorteios' do
+  erb :sorteios
+end
