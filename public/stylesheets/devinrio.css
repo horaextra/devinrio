@@ -44,7 +44,7 @@ header #history {
 
 /*CONTENT*/
 
-#content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0; min-height: 3300px;}
+#content { background-color: #33474D; float: left; width: 720px; margin: 1.5em 0; min-height: 3400px;}
 .schedule { width: 704px; list-style: none;}
 .schedule li { background-color: #222F33; margin: 1.5em 1em; width: 688px;}
 .schedule li.alt h3 {color: #444F55;}
@@ -103,13 +103,14 @@ ul#tabs li a.active { background-color: #222F33; }
 
 #text ul {
   list-style-type: none;
+  height: 190px;
 }
 
 #text ul li {
   float: left;
   width: 335px;
-  height: 42px;
-  padding: 10px 0;
+  height: 60px;
+  line-height: 80px;
   text-align: center;
 }
 
@@ -158,10 +159,12 @@ ul#tabs li a.active { background-color: #222F33; }
   text-align: center;
   text-decoration: none;
   color: #fff;
+  background-color: #55696F;
+  text-shadow: 0 -1px 0 #222F33;
 }
 
 #support p a:hover {
-  background-color: #55696F;
+  background-color: #222F33;
 }
 
 /*BADGES*/
