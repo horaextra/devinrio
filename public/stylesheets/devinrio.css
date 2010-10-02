@@ -12,6 +12,7 @@ body {
 }
 
 h2 { margin: 1em 0 0 0.65em; color: #fff;}
+#map h3 { margin: 1em 0 0 1em; color: #fff;}
 .sidebar h2 { margin: 1em 0 .4em 0;}
 
 .clear {clear: both; }
@@ -182,6 +183,14 @@ ul#tabs li a.active { background-color: #222F33; }
 
 #map iframe {
   margin: 20px 0 10px 20px;
+}
+
+#map ul {
+  margin: 1em 0 1em 2em;
+}
+
+#map ul li {
+  color: #fff;
 }
 
 /* FORMS */
