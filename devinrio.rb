@@ -43,3 +43,8 @@ end
 get '/sorteios' do
   erb :sorteios
 end
+
+get '/palestras' do
+  erb :palestras
+end
+
