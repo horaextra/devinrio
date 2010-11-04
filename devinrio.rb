@@ -33,6 +33,8 @@ get '/certificado' do
   workbook = Spreadsheet::ParseExcel.parse('public/files/LISTA_COMPLETA.xls')
   sheet = workbook.worksheet(0)
 
+  certificate_for = nil
+
   i = 1
   sheet.each do
     id = sheet.cell(i,0).to_i
@@ -47,7 +49,7 @@ get '/certificado' do
     i += 1
   end
 
-  if certificate_for
+  unless certificate_for.to_s.empty?
     erb :certificado, :locals => { :certificate_for => certificate_for }
   else
     erb :error
