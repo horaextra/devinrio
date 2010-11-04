@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'parseexcel'
 
 configure :production do
 end
@@ -28,8 +29,30 @@ get '/inscreva-se' do
   erb :inscricao
 end
 
-get '/boleto' do
-  erb :boleto
+get '/certificado' do
+  workbook = Spreadsheet::ParseExcel.parse('public/files/LISTA_COMPLETA.xls')
+  sheet = workbook.worksheet(0)
+
+  certificate_for = nil
+  i = 1
+  sheet.each do
+    id = sheet.cell(i,0).to_i
+    name = sheet.cell(i,1).to_s('UTF8').split(' ').map {|w| w.capitalize }.join(' ')
+    ip = sheet.cell(i,3).to_s('UTF8')
+    present = sheet.cell(i,6).to_s('UTF8')
+
+    certificate_for = name if present == "Sim" && id == params[:id].to_i && ip == params[:ip].to_s
+
+    break if certificate_for
+
+    i += 1
+  end
+
+  if certificate_for
+    erb :certificado, :locals => { :certificate_for => certificate_for }
+  else
+    erb :error
+  end
 end
 
 get '/imprensa' do
