@@ -33,7 +33,6 @@ get '/certificado' do
   workbook = Spreadsheet::ParseExcel.parse('public/files/LISTA_COMPLETA.xls')
   sheet = workbook.worksheet(0)
 
-  certificate_for = nil
   i = 1
   sheet.each do
     id = sheet.cell(i,0).to_i
