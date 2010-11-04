@@ -44,7 +44,7 @@ get '/certificado' do
 
     certificate_for = name if present == "Sim" && id == params[:id].to_i && ip == params[:ip].to_s
 
-    break if certificate_for
+    break unless certificate_for.to_s.empty?
 
     i += 1
   end
