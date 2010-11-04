@@ -38,9 +38,9 @@ get '/certificado' do
   i = 1
   sheet.each do
     id = sheet.cell(i,0).to_i
-    name = sheet.cell(i,1).to_s('UTF8').split(' ').map {|w| w.capitalize }.join(' ')
-    ip = sheet.cell(i,3).to_s('UTF8')
-    present = sheet.cell(i,6).to_s('UTF8')
+    name = sheet.cell(i,3).to_s('UTF8').split(' ').map {|w| w.capitalize }.join(' ')
+    ip = sheet.cell(i,7).to_s('UTF8')
+    present = sheet.cell(i,12).to_s('UTF8')
 
     certificate_for = name if present == "Sim" && id == params[:id].to_i && ip == params[:ip].to_s
 
@@ -71,4 +71,3 @@ end
 get '/palestras' do
   erb :palestras
 end
-
