@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'parseexcel'
+require 'cgi'
 
 configure :production do
 end
@@ -37,12 +38,11 @@ get '/certificado' do
 
   i = 1
   sheet.each do
-    id = sheet.cell(i,0).to_i
     name = sheet.cell(i,3).to_s('UTF8').split(' ').map {|w| w.capitalize }.join(' ')
-    ip = sheet.cell(i,7).to_s('UTF8')
+    email = sheet.cell(i,4).to_s('UTF8').downcase
     present = sheet.cell(i,12).to_s('UTF8')
 
-    certificate_for = name if present == "Sim" && id == params[:id].to_i && ip == params[:ip].to_s
+    certificate_for = name if present == "Sim" && email == CGI.unescape(params[:email]).to_s.downcase
 
     break unless certificate_for.to_s.empty?
 
@@ -58,6 +58,10 @@ end
 
 get '/imprensa' do
   erb :imprensa
+end
+
+get '/quero-o-meu-certificado' do
+  erb :form_certificado
 end
 
 get '/press' do

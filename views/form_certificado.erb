@@ -19,9 +19,14 @@
 		<div id="crumb">
 			<%= erb(:header, :layout => false) %>
 			<div id="content">
-			  <h2>Ops, o certificado não foi encontrado.</h2>
-			  
-			  <p id="info">Você esteve no evento? Então mande um e-mail para <a href="mailto:contato@devinrio.com.br">contato@devinrio.com.br</a> relatando o problema</p>
+			  <h2>Pegue o seu certificado</h2>
+
+        <form action="/certificado" method="get">
+        	<fieldset>
+        	  <label>E-mail de cadastro <input id="email" name="email" size="20" type="text" /></label><br>
+        	  <label><input class="button" type="submit" value="Mostre-me o meu certificado" /></label>
+          </fieldset>
+        </form>
 			</div>
 			<%= erb(:sidebar, :layout => false) %>
 		</div>
