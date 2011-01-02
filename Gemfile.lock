@@ -1,0 +1,35 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    diff-lcs (1.1.2)
+    parseexcel (0.5.2)
+    rack (1.2.1)
+    rack-test (0.5.6)
+      rack (>= 1.0)
+    rake (0.8.7)
+    rcov (0.9.9)
+    rspec (2.0.1)
+      rspec-core (~> 2.0.1)
+      rspec-expectations (~> 2.0.1)
+      rspec-mocks (~> 2.0.1)
+    rspec-core (2.0.1)
+    rspec-expectations (2.0.1)
+      diff-lcs (>= 1.1.2)
+    rspec-mocks (2.0.1)
+      rspec-core (~> 2.0.1)
+      rspec-expectations (~> 2.0.1)
+    sinatra (1.1.0)
+      rack (~> 1.1)
+      tilt (~> 1.1)
+    tilt (1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  parseexcel
+  rack-test
+  rake
+  rcov
+  rspec
+  sinatra

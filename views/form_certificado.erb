@@ -19,7 +19,14 @@
 		<div id="crumb">
 			<%= erb(:header, :layout => false) %>
 			<div id="content">
-	<iframe src ="http://staging.eventoshq.com.br/ba307b1a8063e841d5cdb2ed6668dd82d256ec2f/subscriptions/new" class="form_iframe" style="border: 0; width: 600px; height:2270px;" scrolling="no" frameborder="0"><p>O seu browser não permite iframes.</p></iframe>
+			  <h2>Pegue o seu certificado</h2>
+
+        <form action="/certificado" method="get">
+        	<fieldset>
+        	  <label>E-mail de cadastro <input id="email" name="email" size="20" type="text" /></label><br>
+        	  <label><input class="button" type="submit" value="Mostre-me o meu certificado" /></label>
+          </fieldset>
+        </form>
 			</div>
 			<%= erb(:sidebar, :layout => false) %>
 		</div>
