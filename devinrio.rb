@@ -15,3 +15,7 @@ end
 get '/inscreva-se' do
   erb :inscricao
 end
+
+get '/heempreende' do
+  erb :heempreende
+end

@@ -1,0 +1,78 @@
+body {
+  background: #FFF  repeat scroll 0 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+	line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: none repeat scroll 0 0 green;
+  color: #FFFFFF;
+  padding: 20px 32px;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.header p {
+  font-size: 14px;
+  margin: 16px 9px 0 0;
+}
+
+.header ul  li{
+  display:inline-block;
+  float:right;
+  font-size: 20px;
+  padding: 0 16px;
+  border-left: 1px solid #CCC;
+}
+
+.corpo{
+  overflow:hidden;
+  padding: 16px;
+}
+
+.corpo .video{
+  background: none repeat scroll 0 0 #DDD ;
+  border: 1px solid #CCC;
+  float:left;
+  font-size: 10px;
+  text-align: center;
+} 
+
+.corpo .texto{
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 86px;
+}
+
+.corpo .texto button{
+  -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;
+  background: -moz-linear-gradient(center top , rgba(0, 116, 0, 0.8), rgba(12, 77, 0, 0.4)) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 116, 0, 0.8)), to(rgba(12, 77, 0, 0.4)));  
+  color: #FFFFFF;
+  float: left;
+  font-size: 38px;
+  font-weight: bold;
+  height: 85px;
+  margin: 19px 164px;
+  overflow: visible;
+  text-decoration: none;
+  width: 236px;
+}
+.rodape{
+  background: none repeat scroll 0 0 green;
+  color: #FFF;
+  font-size: 10px;
+  text-align: center;
+}
+
+.rodape p{
+  padding: 10px;
+}
