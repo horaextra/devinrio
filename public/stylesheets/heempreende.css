@@ -1,3 +1,5 @@
+
+
 body {
   background: #FFF  repeat scroll 0 0;
   font-family: Helvetica, Arial, sans-serif;
@@ -5,6 +7,7 @@ body {
 	line-height: 1.4em;
   margin: 0;
   padding: 0;
+  border: 1px solid;
 }
 
 .header {
@@ -67,12 +70,12 @@ body {
   width: 236px;
 }
 .rodape{
-  background: none repeat scroll 0 0 green;
-  color: #FFF;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border: 1px solid;
+  clear: both;
+  color: #CCC;
   font-size: 10px;
-  text-align: center;
-}
-
-.rodape p{
+  margin-top: 30px;
   padding: 10px;
+  text-align: center;
 }
