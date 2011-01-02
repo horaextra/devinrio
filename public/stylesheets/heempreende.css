@@ -36,7 +36,8 @@ body {
 
 .corpo{
   overflow:hidden;
-  margin-bottom: -30px;
+  margin: 30px auto;
+  width: 80%;
   padding: 16px;
 }
 
@@ -66,21 +67,22 @@ body {
   font-size: 38px;
   font-weight: bold;
   height: 85px;
-  margin: 19px 164px;
+  margin: 35px 54px;
   overflow: visible;
   text-decoration: none;
   width: 236px;
 }
-.rodape{
-  background: none repeat scroll 0 0 #F5F5F5;
-  border: 1px solid #CCC;
-  bottom: 0;
-  color: #666666;
-  font-size: 10px;
-  margin-top: 30px;
-  padding: 10px;
-  position: absolute;
-  text-align: center;
-  height:50px;
-  width:100%;
+.rodape {
+    background: #F5F5F5;
+    border-top:1px solid #ccc;
+    bottom: 0;
+    clear:both;
+    color: #666;
+    font-size: 10px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width:100%;
 }
