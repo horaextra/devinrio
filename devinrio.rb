@@ -36,7 +36,7 @@ get '/certificado' do
 
   certificate_for = nil
 
-  i = 1
+  i = 0
   sheet.each do
     name = sheet.cell(i,3).to_s('UTF8').split(' ').map {|w| w.capitalize }.join(' ')
     email = sheet.cell(i,4).to_s('UTF8').downcase
