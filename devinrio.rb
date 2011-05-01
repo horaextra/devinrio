@@ -23,7 +23,15 @@ get '/track-b' do
 end
 
 get '/2009' do
-  erb :site_2009
+  erb :"anteriores/site_2009"
+end
+
+get '/2010' do
+  erb :"anteriores/site_2010"
+end
+
+get '/2010-en' do
+  erb :"anteriores/site_2010_en"
 end
 
 get '/inscreva-se' do
