@@ -40,16 +40,17 @@ Source: http://www.filamentgroup.com/lab/image_free_css_tooltip_pointers_a_use_f
 */
 
 .fg-tooltip {
-	padding: .8em .8em .6em;
+	padding: .6em .6em .4em;
 	border-width: 2px !important;
 	position: absolute;
 	background: #f60;
-	font-size: 2em;
+	font-size: 1.8em;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: -1px;
-	bottom: 140px;
-	left: 330px;
+	line-height: 1.2em;
+	bottom: 144px;
+	left: 336px;
 }
 
 .fg-tooltip .fg-tooltip-pointer-down, .fg-tooltip .fg-tooltip-pointer-down-inner {
