@@ -34,6 +34,7 @@ header h1 img { border: none; }
 header p {  width: 600px; color: #fff; font-size: 2em; float: right; line-height: 1.4em; text-align: right;}
 header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
+header p#social a { margin: 0 0 0 5px;}
 
 /* TOOLTIP AND POINTER CSS
 Source: http://www.filamentgroup.com/lab/image_free_css_tooltip_pointers_a_use_for_polygonal_css/
