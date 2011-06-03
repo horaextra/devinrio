@@ -2,55 +2,33 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Dev In Rio 2011 - Hotel Guanabara - Em breve!</title>
-    <meta name="description" content="DevInRio 2011 - Um evento para reunir todas classes de aventureiros em uma só questão"  />
-    <link href='favicon.ico' rel='shortcut icon'>
-    <link href="stylesheets/devinrio.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <!--[if lt IE 9]>
-      <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
-    <![endif]-->
-
-    <!--[if lte IE 6]>
-      <style>
-        #ie6-warning {padding: 5px; background-color: #c20; text-align: center; color: #fff; font-size: 1.2em;}
-        #ie6-warning a {color: #fff; text-decoration: none; border-bottom: 1px solid #fff;}
-        .clearfix {height: 1%;}
-      </style>
-      <script>
-        $(document).ready(function(){
-          var ie6warning = '<div id="ie6-warning">Você está usando <strong>Internet Explorer 6</strong>, um navegador antigo e com falhas de segurança. Experimente um navegador mais atual. <a href="http://www.updateyourbrowser.net/pt/" rel="external nofollow">Saiba mais</a></div>';
-          $("body").append(ie6warning);
-          $("body").prepend(ie6warning);
-        });
-      </script>
-    <![endif]-->
+    <title>Dev In Rio 2010 - Hotel Guanabara - 9 de outubro</title>
+    
+    <meta name="description" content="DevInRio 2010 - Um evento para reunir todas classes de aventureiros em uma só questão"  />
+    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #e9e9e9;
+      }
+      
+      #certificate {
+        margin: auto;
+        width: 960px;
+        height: 679px;
+        background: transparent url(/images/certificado_devinrio.png);
+      }
+      
+      #for {
+        padding: 260px 0 0 0;
+        text-align: center;
+        font: bold 40px Helvetica, Arial, sans-serif;
+      }
+    </style>
   </head>
-
   <body>
-	<div id="wrap">
-		<div id="crumb">
-			<header>
-	      <h1><a href="/"><img src="/images/logo-devinrio-2011.png" alt="Logo Dev In Rio 2011" /></a></h1>
-        <p>
-          <%= "O #{certificate_for} foi no evento em 2010 e seu certificado é válido" %>
-      	</p>
-      	<p id="history"><a href="/2009"><strong>Evento 2009</strong></a> | <a href="/2010"><strong>Evento 2010</strong></a></p>
-        <p id="social"><a href="http://twitter.com/devinrio"><img src="/images/twitter.png"></a> <a href="http://facebook.com/devinrio"><img src="/images/facebook.png"></a></p>
-      </header>
-			<div id="content">
-				<div class="fg-tooltip ui-widget ui-widget-content ui-corner-all">
-        	Em breve, aqui, no Rio. Aguarde...
-        	<div class="fg-tooltip-pointer-down ui-widget-content">
-        		<div class="fg-tooltip-pointer-down-inner"></div>
-        	</div>
-        </div>
-			</div>
-		</div>
-	</div>
-
-  <%= erb(:scripts, :layout => false) %>
-
+	<div id="certificate">
+		<div id="for"><%= certificate_for %></div>
   </body>
 </html>
-
