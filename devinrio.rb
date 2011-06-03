@@ -10,18 +10,6 @@ get '/' do
   erb :index
 end
 
-get '/sala2' do
-  erb :index, :locals => { :sala => 2 }
-end
-
-get '/en' do
-  erb :index_en
-end
-
-get '/track-b' do
-  erb :index_en, :locals => { :sala => 2 }
-end
-
 get '/2009' do
   erb :"anteriores/site_2009"
 end
@@ -32,10 +20,6 @@ end
 
 get '/2010-en' do
   erb :"anteriores/site_2010_en"
-end
-
-get '/inscreva-se' do
-  erb :inscricao
 end
 
 get '/certificado' do
@@ -62,28 +46,4 @@ get '/certificado' do
   else
     erb :error
   end
-end
-
-get '/imprensa' do
-  erb :imprensa
-end
-
-get '/quero-o-meu-certificado' do
-  erb :form_certificado
-end
-
-get '/press' do
-  erb :imprensa_en
-end
-
-get '/sorteios' do
-  erb :sorteios
-end
-
-get '/palestras' do
-  erb :palestras
-end
-
-get '/heempreende' do
-  erb :heempreende
 end
