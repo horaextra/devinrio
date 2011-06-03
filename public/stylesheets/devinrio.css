@@ -36,6 +36,30 @@ header p img { margin-top: 0.5em;}
 header p em { font-style: normal; font-size: 1.3em;}
 header p#social a { margin: 0 0 0 5px;}
 
+/* CONTENT */
+
+#content #error {
+  width: 700px;
+  margin: -180px 0 0 0;
+  padding: 20px 10px 0;
+  background-color: #fff;
+  text-align: right;
+  float: right;
+  color: #000;
+  font-size: .9em;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+#content #error p {
+  margin: 1em 0;
+  line-height: 1em;
+}
+
+#content #error a {
+  color: #333;
+}
+
 /* TOOLTIP AND POINTER CSS
 Source: http://www.filamentgroup.com/lab/image_free_css_tooltip_pointers_a_use_for_polygonal_css/
 */
