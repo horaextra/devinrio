@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='pt'>
+  <head>
+    <meta charset='utf-8' />
+    <meta content='' name='keywords' />
+    <meta content='' name='description' />
+    <title><%= title %>Dev in Rio 2011</title>
+    <link href='favicon.ico' rel='shortcut icon' />
+    <link href='/stylesheets/reset.css' rel='stylesheet' />
+    <link href='/stylesheets/styles.css' rel='stylesheet' />
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+    <script src='/javascripts/scripts.js'></script>
+
+    <!--[if lt IE 9]>
+      <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+    <![endif]-->
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-10307500-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+    <!-- / Google Analytics -->
+  </head>
+  <body>
+    <header>
+      <div id='logo'>
+        <a href='/'>Dev in Rio 2011</a>
+      </div>
+
+      <div id='info'>
+        <div id="when">Sábado - 24 de setembro</div>
+        <div id="where"><a href="/localizacao">Hotel Guanabara - Centro - Rio de Janeiro</a></div>
+      </div>
+    </header>
+    <hr />
+    <div id="container">
+      <section role='main'>
+        <%= yield %>
+      </section>
+      <hr />
+      <aside>
+        <nav id="social">
+          <ul>
+            <li><a href="http://twitter.com/devinrio" id="twitter" rel="external">Twitter</a></li>
+            <li><a href="http://facebook.com/devinrio" id="facebook" rel="external">Facebook</a></li>
+            <li><a href="mailto:contato@devinrio.com.br" id="email">contato@devinrio.com.br</a></li>
+            <li><a href="http://vimeo.com/devinrio" id="vimeo" rel="external">Vimeo</a></li>
+          </ul>
+        </nav>
+        <nav id="menu">
+          <ul>
+            <li id="suggest"><a href="https://spreadsheets.google.com/spreadsheet/viewform?formkey=dEVIakJQa004RVdENnNMZWs5ZEtWNmc6MQ" rel="external">Sugira uma assunto!</a></li>
+            <li><a href="/2009">Evento 2009</a></li>
+            <li><a href="/2010">Evento 2010</a></li>
+            <li><a href="/files/Dev-in-Rio-2011-plano-de-captacao.pdf">Plano de captação</a></li>
+          </ul>
+        </nav>
+        
+        <a class='twitter-share-button' data-count='horizontal' data-via='devinrio' href='http://twitter.com/share'>Tweet</a>
+        <br />
+        <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/devinrio&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=20&amp;locale=pt_BR" frameborder="0" allowTransparency="true" scrolling="no" style="border:none; overflow:hidden; width:200px; height:20px; margin: 10px 0;"></iframe>
+        <br />
+        <g:plusone href='http://www.devinrio.com.br' size='medium'></g:plusone>
+
+      </aside>
+    </div>
+    <hr />
+    <footer>
+      <div id="footer-inner">
+        <div id="sponsors">
+          <h2>Patrocínio</h2>
+      
+          <nav>
+            <ul>
+              <li><a href="http://globo.com" rel="external"><img src="/images/logos/globo-com.png" alt="Globo.com" /></a></li>
+              <li><a href="http://www.gonow.com.br" rel="external"><img src="/images/logos/gonow.png" alt="Gonow" /></a></li>
+            </ul>
+          </nav>
+        </div>
+      
+        <div id="support">
+          <h2>Apoio</h2>
+      
+          <nav>
+            <ul>
+              <li><a href="http://infnet.edu.br/"><img src="/images/logos/infnet.png" alt="Infnet" /></a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <p>Copyright &copy; 2011 Dev in Rio</p>
+      </div>
+    </footer>
+
+    <script src='http://platform.twitter.com/widgets.js'></script>
+    <script src='http://apis.google.com/js/plusone.js'>{lang: 'pt-BR'}</script>
+
+    <!-- User Voice feedback -->
+    <script type="text/javascript">
+      var uservoiceJsHost = ("https:" == document.location.protocol) ? "https://uservoice.com" : "http://cdn.uservoice.com";
+      document.write(unescape("%3Cscript src='" + uservoiceJsHost + "/javascripts/widgets/tab.js' type='text/javascript'%3E%3C/script%3E"))
+    </script>
+    <script type="text/javascript">
+      UserVoice.Tab.show({ 
+        /* required */
+        key: 'devinrio',
+        host: 'devinrio.uservoice.com', 
+        forum: '28183', 
+        /* optional */
+        alignment: 'left',
+        background_color:'#f60', 
+        text_color: 'white',
+        hover_color: '#f60',
+        lang: 'pt_BR'
+      })
+    </script>
+    <!-- / User Voice feedback -->
+  </body>
+</html>
