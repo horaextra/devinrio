@@ -7,22 +7,30 @@ configure :production do
 end
 
 get '/' do
-  erb :index
+  title = "24 de setembro - Hotel Guanabara - Rio de Janeiro - "
+  erb :index, :locals => { :title => title }
+end
+
+get '/localizacao' do
+  title = "Localização - "
+  erb :localizacao, :locals => { :title => title }
 end
 
 get '/2009' do
-  erb :"anteriores/site_2009"
+  erb :"anteriores/site_2009", :layout => false
 end
 
 get '/2010' do
-  erb :"anteriores/site_2010"
+  erb :"anteriores/site_2010", :layout => false
 end
 
 get '/2010-en' do
-  erb :"anteriores/site_2010_en"
+  erb :"anteriores/site_2010_en", :layout => false
 end
 
 get '/certificado' do
+  title = "Certificado de 2010 - "
+  
   workbook = Spreadsheet::ParseExcel.parse('public/files/LISTA_COMPLETA.xls')
   sheet = workbook.worksheet(0)
 
@@ -42,8 +50,8 @@ get '/certificado' do
   end
 
   unless certificate_for.to_s.empty?
-    erb :certificado, :locals => { :certificate_for => certificate_for }
+    erb :certificado, :layout => false, :locals => { :certificate_for => certificate_for }
   else
-    erb :error
+    erb :error, :locals => { :title => title }
   end
 end

@@ -1,0 +1,279 @@
+/* Dev in Rio Styles */
+
+@font-face {
+  font-family: 'CompactaRoman';
+  src: url('/fonts/compctan-compacta.eot');
+  src: url('/fonts/compctan-compacta.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/compctan-compacta.woff') format('woff'),
+    url('/fonts/compctan-compacta.ttf') format('truetype'),
+    url('/fonts/compctan-compacta.svg#CompactaRoman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CompactaLight';
+  src: url('/fonts/compctal-compacta.eot');
+  src: url('/fonts/compctal-compacta.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/compctal-compacta.woff') format('woff'),
+    url('/fonts/compctal-compacta.ttf') format('truetype'),
+    url('/fonts/compctal-compacta.svg#CompactaLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background: #232f33 url(/images/bg-html.png);
+}
+
+body {
+  font-size: 75%;
+  line-height: 1.25;
+  font-family: Helvetica, Arial, sans-serif;
+  background: transparent url(/images/bg-body.png) no-repeat 0 0;
+}
+
+header, #container, #footer-inner {
+  display: block;
+  margin: auto;
+  padding: 0 10px;
+  width: 940px;
+  font-size: 1.2em;
+}
+
+/* HEADING */
+
+h1,
+h2,
+h3,
+h4 {
+  margin: .4em 0 .2em;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+}
+
+h1 {
+  font-size: 1.6em;
+  line-height: 1.4;
+  color: #75c4e4;
+}
+
+article h1 {
+  margin: 0 0 .4em;
+  padding: 5px 0;
+  border-bottom: 1px solid #75c4e4;
+}
+
+h2 {
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* HEADER */
+
+header {
+  height: 251px;
+  padding: 20px 0 0;
+}
+
+#logo {
+  float: left;
+}
+
+#logo a {
+  display: block;
+  width: 240px;
+  height: 251px;
+  background: transparent url(/images/logo-devinrio-2011.png) no-repeat 0 0;
+  text-indent: -9999px;
+}
+
+#info {
+  margin-top: 57px;
+  text-transform: uppercase;
+  text-align: right;
+  float: right;
+  text-shadow: 0 1px 1px #000;
+}
+
+#info #when {
+  font-family: 'CompactaRoman';
+  font-size: 5em;
+  color: #e27a0a;
+  line-height: 1;
+}
+
+#info #where {
+  font-family: 'CompactaLight';
+  font-size: 2.7em;
+  color: #fff;
+}
+
+#info #where a {
+  padding: 0 0 0 70px;
+  background: transparent url(/images/mapa-rio-de-janeiro.png) no-repeat 0 2px;
+  color: #fff;
+}
+
+#info #where a:hover {
+  background: transparent url(/images/mapa-rio-de-janeiro.png) no-repeat 0 -42px;
+  color: #75c4e4;
+}
+
+/* SECTION */
+
+section[role="main"] {
+  margin: 0 0 20px 0;
+  display: block;
+  width: 680px;
+  float: right;
+}
+
+article {
+  display: block;
+  background: transparent url(/images/bg-article.png);
+  padding: 10px;
+}
+
+article p {
+  margin: 1.4em 0;
+  line-height: 1.4;
+  color: #fff;
+}
+
+article a {
+  color: #75c4e4;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* ASIDE */
+
+aside {
+  display: block;
+  margin: 0 20px 0 0;
+  width: 240px;
+  float: left;
+}
+
+aside nav#social {
+  display: block;
+  margin: 10px 0;
+}
+
+aside nav#social ul {
+  height: 32px;
+}
+
+aside nav#social ul li {
+  margin: 0 20px 0 0;
+  width: 32px;
+  height: 32px;
+  float: left;
+}
+
+aside nav#social ul li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+aside nav#social ul li a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+aside nav#social ul li a#twitter {
+  background: transparent url(/images/icons.png) no-repeat 0 0;
+}
+
+aside nav#social ul li a#facebook {
+  background: transparent url(/images/icons.png) no-repeat -50px 0;
+}
+
+aside nav#social ul li a#email {
+  background: transparent url(/images/icons.png) no-repeat -100px 0;
+}
+
+aside nav#social ul li a#vimeo {
+  background: transparent url(/images/icons.png) no-repeat -150px 0;
+}
+
+aside nav#menu {
+  margin: 20px 0;
+}
+
+aside nav#menu ul li {
+  padding: 2px 0;
+}
+
+aside nav#menu ul li#suggest {
+  margin-bottom: 4px;
+  border-bottom: 1px solid #4e585c;
+}
+
+aside nav#menu ul li a {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+aside nav#menu ul li a:hover {
+  color: #75c4e4;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 20px 0;
+  background: transparent url(/images/bg-footer.png);
+  font-size: .9em;
+  color: #fff;
+  clear: both;
+}
+
+#footer-inner p {
+  color: #4e585c;
+  clear: both;
+}
+
+#footer-inner #sponsors,
+#footer-inner #support {
+  margin: 0 0 20px 0;
+  float: left;
+}
+
+#footer-inner #sponsors {
+  width: 600px;
+}
+
+#footer-inner nav {
+  display: block;
+}
+
+#footer-inner nav ul li {
+  display: inline;
+  margin: 0 20px 0 0;
+}
+
+#footer-inner nav ul li a img {
+  vertical-align: middle;
+}
