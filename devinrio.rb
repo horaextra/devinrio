@@ -7,7 +7,7 @@ configure :production do
 end
 
 get '/' do
-  title = "29 de outubro - Hotel Guanabara - Rio de Janeiro - "
+  title = "Sábado - 29 de outubro - Hotel Guanabara - Rio de Janeiro - "
   erb :index, :locals => { :title => title }
 end
 
