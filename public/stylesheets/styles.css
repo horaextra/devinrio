@@ -136,7 +136,7 @@ header {
 /* SECTION */
 
 section[role="main"] {
-  margin: 0 0 20px 0;
+  margin: -200px 0 20px 0;
   display: block;
   width: 680px;
   float: right;
